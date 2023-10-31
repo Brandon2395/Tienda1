@@ -6,6 +6,7 @@ package com.tienda.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 
 /**
@@ -29,6 +30,14 @@ public class Producto implements Serializable{
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+    private long idCategoria;
+    private String detalle;
+    private int existencias;
+    private double precio;
+    
+    //@ManyToOne
+    //@JoinColumn(name="id_categoria", updatable = false)
+    //List<Producto> productos;
 
     public Producto() {
     }
