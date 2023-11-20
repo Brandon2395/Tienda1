@@ -1,51 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.domain;
-
+ 
 import jakarta.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 import lombok.Data;
-
-/**
- *
- * @author Brandon
- */
-
+ 
 @Data
 @Entity
-@Table(name ="producto")
-
-//Sereialización va a almacenar datos 
-public class Producto implements Serializable{
-    
-    private static final long serialVersionUID = 1L; //para poder hacer el ciclo de la sumatoria de la categoría (AUTO_INCREMENT)
-    
-    @Id /*Id es la llave de la tabla categoría*/
+@Table(name="producto")
+public class Producto implements Serializable {
+    private static final long serialVersionUID = 1L;
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_producto")
-    private long idProducto;
+    @Column(name="id_producto")
+    private Long idProducto;
+    //private Long idCategoria;  ya no se usa por el @manyToOne
     private String descripcion;
+    private String detalle;
+    private double precio;
+    private int existencias;
     private String rutaImagen;
     private boolean activo;
-    private long idCategoria;
-    private String detalle;
-    private int existencias;
-    private double precio;
-    
-    //@ManyToOne
-    //@JoinColumn(name="id_categoria", updatable = false)
-    //List<Producto> productos;
-
+ 
+    @ManyToOne
+    @JoinColumn(name="id_categoria")
+    Categoria categoria;
+ 
+ 
     public Producto() {
     }
-
+ 
     public Producto(String descripcion, boolean activo) {
         this.descripcion = descripcion;
         this.activo = activo;
     }
-    
-    
 }
