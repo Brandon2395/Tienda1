@@ -16,9 +16,12 @@ C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\dao\RolDao.j
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\impl\ProductoServiceImpl.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\TiendaApplication.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\domain\Rol.java
+C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\impl\ReporteServiceImpl.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\impl\CategoriaServiceImpl.java
+C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\ReporteService.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\FirebaseStorageService.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\impl\FirebaseStorageServiceImpl.java
+C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\controller\ReporteController.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\CorreoService.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\service\impl\UsuarioDetailsServiceImpl.java
 C:\Users\Personal\Documents\GitHub\Tienda1\src\main\java\com\tienda\controller\UsuarioController.java
